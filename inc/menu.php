@@ -1,0 +1,45 @@
+<?php
+	require "admin/inc/conexion.php";
+?>
+<li class="menu-item">
+	<a href="index.php">Inicio</a>
+</li>
+<li class="menu-item">
+	<a href="about-es.php">Nosotros</a>
+</li>
+<!-- <li class="menu-item">
+	<a href="blog.php">Blog</a>
+</li>-->
+<li class="menu-item menu-item-has-children">
+	<a href="#">Servicios</a>
+	<ul class="sub-menu">
+		<li class="menu-item"> <a href="services.php">Servicios</a> </li>
+		<li class="menu-item"> <a href="service-details.php">Cámaras de Seguridad CCTV</a> </li>
+		<li class="menu-item"> <a href="#">Cámaras de Seguridad IP</a> </li>
+		<li class="menu-item"> <a href="#">Alarmas de Seguridad</a> </li>
+		<li class="menu-item"> <a href="#">Alarmas Contra Incendio</a> </li>
+		<li class="menu-item"> <a href="#">Control de Acceso y Asistencia</a> </li>
+		<li class="menu-item"> <a href="#">Vídeo Portero Digital</a> </li>
+		<li class="menu-item"> <a href="#">Cercas Electricas</a> </li>
+		<li class="menu-item"> <a href="#">Redes de Datos</a> </li>
+	</ul>
+</li>
+<li class="menu-item menu-item-has-children">
+	<a href="#">Productos</a>
+	<ul class="sub-menu">
+		<li class="menu-item"> <a href="products.php">Productos</a> </li>
+		<?php
+			$sql = 'SELECT c.idCategory, c.name, COUNT(c.idCategory) AS total FROM product AS p, category AS c WHERE p.idCategory = c.idCategory GROUP BY p.idCategory';
+			$query = $db->Execute($sql);
+
+			while ($row = $query->FetchRow()) {
+		?>
+			<li class="menu-item"> <a href="products.php?cat=<?=$row[0];?>"> <?=$row['name'];?> </a> </li>
+		<?php
+			}
+		?>
+	</ul>
+</li>
+<li class="menu-item">
+	<a href="contact-es.php">Contáctenos</a>
+</li>
