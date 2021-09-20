@@ -1,0 +1,111 @@
+table tbody td.dt-body-center { text-align: center}
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+    color: #a94442;
+}
+.form-error {
+    font-size: 9px;
+}
+
+div#tema{
+    padding: 0 0 0 30px;
+    height: 250px;
+    border: 1px solid #ddd;
+	background: #f1f1f1;
+    overflow-y: scroll;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 0.875em;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-image: var(--bs-gradient);
+    margin: 0 5px 0 0;
+}
+.badge a{
+    text-decoration: none;
+    color: #fafafa;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+    padding: 0.1875rem 0.55rem;
+    font-size: 0.775rem;
+    border-radius: 0.2rem;
+    margin-right: 5px;
+}
+
+html body .m-t-40 {
+    margin-top: 40px;
+}
+
+html body .m-b-40 {
+    margin-bottom: 40px;
+}
+
+/* Estilos para select */
+
+#cboTipo_Documento, 
+#cboTypeUser,
+#txtStatus{
+    margin-top: 5px;;
+}
+
+/* Estilos upload files */
+
+/** DROP ZONE **/
+.file-preview {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.file-drop-zone {
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 3px 15px 12px 12px;
+    padding: 5px;
+}
+.file-drop-zone-title {
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+    /*padding: 85px 10px;*/
+    cursor: default;
+}
+.file-highlighted {
+    border: 2px dashed #999 !important;
+    background-color: #f0f0f0;
+}
+
+#upload{
+	margin-bottom: 0rem;
+}
+
+#upload .fade{
+	opacity: 1;
+}
+
+/* Estilos Mapa*/
+
+#mapa {
+    height: 300px;
+}
+
+/* TABLAS */
+
+.table {
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgb(236, 241, 249);
+}
