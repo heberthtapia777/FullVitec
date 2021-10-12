@@ -251,7 +251,7 @@
 			<div class="col-lg-6">
 				<div class="mr-lg-30">
 					<div class="section-title mb-0 text-left">
-						<p class="subtitle">Contamos Con Experiencia</p>
+						<p class="subtitle">Contamos Con Más De 5 Años De Experiencia</p>
 						<h4 class="title">Empresa líder en instalación, mantenimiento, reparación y servicio técnico de equipos de seguridad de alta tecnología. </h4>
 					</div>
 					<p class="blockquote bg-transparent"> Obtenga la mejor solución para su hogar, su empresa o cualquier lugar interior o exterior </p>
