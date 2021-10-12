@@ -20,11 +20,11 @@
 			container.classList.add('container-fluid');
 		  }
 		</script>
-		
+
 		<?PHP
 			include '../../inc/menu.php';
 		?>
-		
+
 		<div class="content">
 			<nav class="navbar navbar-light navbar-glass navbar-top navbar-expand" style="display: none;">
 				<button class="btn navbar-toggler-humburger-icon navbar-toggler mr-1 mr-sm-3" type="button" data-toggle="collapse" data-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
@@ -34,9 +34,9 @@
 					<?PHP
 						//include '../../inc/search.php';
 						include '../../inc/menuTop.php';
-					?>            
+					?>
 			</nav>
-			
+
 			<script>
 				var navbarPosition = localStorage.getItem('navbarPosition');
 				var navbarVertical = document.querySelector('.navbar-vertical');
@@ -68,7 +68,7 @@
 						<div class="col-md">
 							<h5 class="mb-2 mb-md-0" data-anchor="data-anchor">Productos</h5>
 						</div>
-						<div class="col-auto">							
+						<div class="col-auto">
 							<button class="btn btn-outline-primary btn-sm" id="btnNuevo"><i class="fas fa-plus"></i> Nuevo</button>
 							<button class="btn btn-outline-danger btn-sm" id="btnCancel" onclick="cancelar()"><i class="fas fa-window-close"></i> Cancelar</button>
 						</div>
@@ -76,9 +76,9 @@
 				</div>
 			</div>
 
-		  	<div class="card">		  		
+		  	<div class="card">
 				<div class="card-body bg-light">
-					<div id="verLista">						
+					<div id="verLista">
 						<table id="tblProduct" class="table table-striped table-bordered table-condensed table-hover" cellspacing="0" cellpadding="0" width="100%">
 							<thead>
 								<tr>
@@ -126,39 +126,39 @@
 									<div class="col-md">
 										<h5 class="mb-2 mb-md-0">Nuevo Producto</h5>
 									</div>
-									
+
 								</div>
 							</div>
-						</div>						
+						</div>
 						<form role="form" class="floating-labels m-t-40" name="frmProduct" id="frmProduct" enctype="multipart/form-data" class="needs-validation" novalidate="">
 							<div class="row g-0">
 								<div class="col-lg-12 left">
-									<div class="row">									
+									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 											<div class="form-group has-primary m-b-40">
 												<input id="txtIdProduct" type="hidden" maxlength="50" class="form-control" name="txtIdProduct" />
 												<label>Categoria:</label>
-												<select id="cboCategory" required="" name="cboCategory" class="form-control">									
-													
+												<select id="cboCategory" required="" name="cboCategory" class="form-control">
+
 												</select>
 												<span class="bar"></span>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="form-group has-primary m-b-40">												
+											<div class="form-group has-primary m-b-40">
 												<label>Marca:</label>
 												<select id="cboBrand" required="" name="cboBrand" class="form-control">
 												</select>
 												<span class="bar"></span>
 											</div>
 										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 left">											
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 left">
 											<div class="form-group has-primary m-b-40">
 												<label>U. Medida:</label>
 												<select id="cboUnidadMedida" required="" name="cboUnidadMedida" class="form-control">
 
 												</select>
-												<span class="bar"></span>	
+												<span class="bar"></span>
 											</div>
 										</div>
 									</div>
@@ -168,36 +168,36 @@
 												<label>Nombre Producto:</label>
 												<input id="txtProduct" type="text" name="txtProduct" required="" class="form-control" autofocus="" />
 												<span class="bar"></span>
-											</div>									
+											</div>
 										</div>
 										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
 											<div class="form-group has-primary m-b-40">
 												<label>Modelo:</label>
 												<input id="txtModel" type="text" name="txtModel" required="" class="form-control" autofocus="" />
 												<span class="bar"></span>
-											</div>									
+											</div>
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 left">											
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 left">
 											<div class="form-group has-primary m-b-40">
 												<textarea id="txtSummary" class="form-control" name="txtSummary" placeholder=""></textarea>
 												<span class="bar"></span>
 												<label>Resumen:</label>
 											</div>
-											
+
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 left">											
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 left">
 											<div class="form-group has-primary m-b-40">
 												<textarea id="txtDetails" class="form-control" name="txtDetails" placeholder=""></textarea>
 												<span class="bar"></span>
 												<label>Descripción:</label>
-											</div>											
+											</div>
 										</div>
 									</div>
-								</div>								
+								</div>
 								<div class="col-lg-12 left">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -223,11 +223,11 @@
 												<label>Estado:</label>
 												<select class="form-control" required="" name="txtEstado" id="txtEstado">
 												<option value="Activo">Activo</option>
-												<option value="Inactivo">Inactivo</option>											
+												<option value="Inactivo">Inactivo</option>
 												</select>
 												<span class="bar"></span>
 											</div>
-										</div>									
+										</div>
 									</div>
 									<input id="numRow" type="hidden" name="numRow" value=""/>
 								</div>
@@ -280,11 +280,11 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="card mt-3">
 								<div class="card-body">
-									<div class="row justify-content-between align-items-center">					
-										<div class="col-auto">						
+									<div class="row justify-content-between align-items-center">
+										<div class="col-auto">
 											<button type="submit" class="btn btn-outline-success btn-sm mr-2"><i class="fas fa-save"></i> Guardar</button>
 											<button class="btn btn-outline-danger btn-sm" id="btnCancel" onclick="cancelar()"><i class="fas fa-window-close"></i> Cancelar</button>
 										</div>
@@ -308,11 +308,11 @@
 	</div>
 		<?php
 			include "../../inc/modalConfig.php";
-		?>		
+		?>
 	  </div>
 	</main><!-- ===============================================-->
 	<!--    End of Main Content-->
-	<!-- ===============================================-->	
+	<!-- ===============================================-->
 
 	<!-- ===============================================-->
 	<!--    JavaScripts-->
@@ -320,9 +320,9 @@
 	<?PHP
 		include '../../inc/footer.php'
 	?>
-	
-	<script type="text/javascript" src="../../assets/js/scripts/product.js"></script>	
-	<script>	
+
+	<script type="text/javascript" src="../../assets/js/scripts/product.js"></script>
+	<script>
 
 		lightbox.option({
 			'resizeDuration': 200,
@@ -331,7 +331,7 @@
 
 		//var myModal = document.getElementById('modalMap');
 
-		/*myModal.addEventListener('shown.bs.modal', function () {			
+		/*myModal.addEventListener('shown.bs.modal', function () {
 			//initMapEdit('mapa','', '');
 		})*/
 	</script>

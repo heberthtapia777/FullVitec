@@ -1,10 +1,10 @@
 var validator;
 $( document ).ready(function() {
-    init();	
+    init();
 	var tabla;
 	ComboCategory();
 	ComboBrand();
-	ComboUnidadMedida();	
+	ComboUnidadMedida();
 
 	validator = $("#frmProduct").validate({
 		ignore: "",
@@ -14,14 +14,14 @@ $( document ).ready(function() {
 			cboUnidadMedida: "required",
 			txtProduct: "required",
 			txtModel: "required",
-			txtSummary: "required",			
+			txtSummary: "required",
 			txtDetails: "required",
 			txtPricePlata: "required",
-			txtPriceOro: "required",			
-			txtEstado: "required",			
-		},				
+			txtPriceOro: "required",
+			txtEstado: "required",
+		},
 		messages: {
-			txtEmail: "Por favor, introduce una dirección de correo válida"					
+			txtEmail: "Por favor, introduce una dirección de correo válida"
 		},
 		errorElement: "em",
 		errorPlacement: function(label, element) {
@@ -38,7 +38,7 @@ $( document ).ready(function() {
 				} else {
 					label.insertAfter(element)
 				}
-			}							
+			}
 		},
 		highlight: function ( error, errorClass, validClass ) {
 			$( error ).addClass( "is-invalid" ).removeClass( "is-valid" );
@@ -46,16 +46,16 @@ $( document ).ready(function() {
 		unhighlight: function (error, errorClass, validClass) {
 			$( error ).addClass( "is-valid" ).removeClass( "is-invalid" );
 		}
-		
-	})			
+
+	})
 });
 
 /**
  * Carga editor TINYMCE
  */
 
- function cargaEditor(){   
-    
+ function cargaEditor(){
+
     tinymce.init({
         selector: '#txtSummary, #txtDetails',
 		valid_children : '+div[style]',
@@ -81,10 +81,10 @@ $( document ).ready(function() {
 }
 
 function init(){
-	listadoTabla();// Ni bien carga la pagina que cargue el metodo	
+	listadoTabla();// Ni bien carga la pagina que cargue el metodo
 
 	$("#btnNuevo").click(function() {
-		VerForm();		
+		VerForm();
 		uploadFile('frmProduct','');
 	});
 }
@@ -157,7 +157,7 @@ $.validator.setDefaults( {
         //var formData = new FormData($("#frmProduct")[0]);
 
 		var dato = JSON.stringify( $('#frmProduct').serializeObject() );
-    
+
         $.ajax({
 			url: "../../ajax/productAjax.php?op=SaveOrUpdate",
 			type: 'POST',
@@ -173,7 +173,7 @@ $.validator.setDefaults( {
 
             /*url: "../../ajax/employeAjax.php?op=SaveOrUpdate",
             type: "POST",
-            data: formData,      
+            data: formData,
             contentType: false,
             processData: false,
             success: function(data){*/
@@ -185,12 +185,12 @@ $.validator.setDefaults( {
 							title: 'PRODUCTO registrado exitosamente.',
 							showConfirmButton: false,
 							timer: 2000
-						}).then((result) => {						
+						}).then((result) => {
 							img = '<a href="../../modulo/product/uploads/files/'+data.txtFoto+'" data-lightbox="image-'+data.lastId+'" ><img src="../../modulo/product/uploads/files/thumbnail/'+data.txtFoto+'"></a>';
 
 							button = '<button id="'+data.lastId+'" class="btn btn-warning btn-sm mr-1 mb-1" data-toggle="tooltip" title="Editar" onclick="cargarDataProduct('+data.lastId+')"><i class="fas fa-pencil-alt"></i> </button>&nbsp;'+
-							'<button class="btn btn-danger btn-sm mr-1 mb-1" data-toggle="tooltip" title="Eliminar" onclick="eliminarProduct('+data.lastId+')"><i class="fas fa-trash"></i> </button>';							
-							
+							'<button class="btn btn-danger btn-sm mr-1 mb-1" data-toggle="tooltip" title="Eliminar" onclick="eliminarProduct('+data.lastId+')"><i class="fas fa-trash"></i> </button>';
+
 							$('#tblProduct > tbody').prepend(''+
 							'<tr id="'+data.lastId+'">'+
 							'<td>1</td>'+
@@ -230,7 +230,7 @@ $.validator.setDefaults( {
 							timer: 2000
 						}).then((result) => {
 							/* Read more about isConfirmed, isDenied below */
-							//listadoTabla();							
+							//listadoTabla();
 
 							img = '<a href="../../modulo/product/uploads/files/'+data.txtFoto+'" data-lightbox="image-'+data.txtIdProduct+'" ><img src="../../modulo/product/uploads/files/thumbnail/'+data.txtFoto+'"></a>';
 
@@ -250,14 +250,14 @@ $.validator.setDefaults( {
 										$(this).html()
 									}else{
 										if (v[c] != ''){
-											$(this).html(v[c]);	
-										}										
-									}									
+											$(this).html(v[c]);
+										}
+									}
 									c++;
 								})
 							});
 							//enumera(1);
-							Limpiar();							
+							Limpiar();
 							OcultarForm();
 						})
 					}else{
@@ -268,9 +268,9 @@ $.validator.setDefaults( {
 							showConfirmButton: false,
 							timer: 2000
 						})
-					}                    
+					}
                 }
-                
+
             }
 
         });
@@ -305,14 +305,14 @@ function enumera(i){
 			$(this).removeAttr("class");
 			$(this).addClass('odd');
 		}
-		
+
 		$(this).find('td').eq(0).text(i);
 		i++;
 	});
 }
 
 function Limpiar(){
-	$("#frmProduct")[0].reset();	
+	$("#frmProduct")[0].reset();
 	validator.resetForm();
 	$("#frmProduct").find('input').removeClass('is-valid');
 	$("#frmProduct").find('select').removeClass('is-valid');
@@ -340,7 +340,7 @@ function OcultarForm(){
 
 function cancelar() {
 	Limpiar();
-	OcultarForm();	
+	OcultarForm();
 }
 
 function listadoTabla(){
@@ -349,10 +349,10 @@ function listadoTabla(){
 		{   "aProcessing": true,
 			"aServerSide": true,
 			"scrollX": true,
-			'order' : [[0,'asc']],	
+			'order' : [[0,'asc']],
 			language: {
                 url: 'https://cdn.datatables.net/plug-ins/1.10.22/i18n/Spanish.json'
-            },             
+            },
         	"aoColumns":[
         	     	{"mDataProp": "0"},
                     {"mDataProp": "1"},
@@ -375,10 +375,10 @@ function listadoTabla(){
 					error: function(e){
 				   		console.log(e.responseText);
 					}
-	        	},				
+	        	},
 	        "bDestroy": true
 
-    	}).DataTable();	
+    	}).DataTable();
 };
 
 function eliminarProduct(id){
@@ -393,7 +393,7 @@ function eliminarProduct(id){
 	  }).then((result) => {
 		if (result.isConfirmed) {
 			$.post("../../ajax/productAjax.php?op=delete", {id : id}, function(e){// llamamos la url de eliminar por post. y mandamos por parametro el id
-                Swal.fire({
+				Swal.fire({
 					position: 'top-end',
 					title: 'Borrado!',
 					text: 'Su registro ha sido eliminado.',
@@ -402,11 +402,11 @@ function eliminarProduct(id){
 					timer: 3000
 				});
 				listadoTabla();
-            });			
+            });
 		}
 	  })
 
-	
+
 }
 
 function cargarDataProduct(idProduct){
@@ -419,7 +419,7 @@ function cargarDataProduct(idProduct){
 		data: 'idProduct='+idProduct,
 		success: function (data) {
 			var value = $('button#'+idProduct).closest('tr').find('td:first').html();
-		
+
 			VerForm();// mostramos el formulario
 			$("#txtIdProduct").val(data.idProduct).closest('div').addClass('focused');
 			$("#cboCategory").val(data.cboCategory).closest('div').addClass('focused');
@@ -436,7 +436,7 @@ function cargarDataProduct(idProduct){
 			cargaEditor();
 
 			uploadFile('frmProduct',idProduct);
-			validator.resetForm();			
+			validator.resetForm();
 		}
 	});
 

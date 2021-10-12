@@ -556,84 +556,95 @@
 	</div>
 	<!-- Progress bar End -->
 
-	<!-- Team Start -->
-	<section class="section section-padding light-bg">
+	<!-- Case Studies Start -->
+	<div class="section section-padding">
 		<div class="container">
 
-			<div class="row align-items-center">
+			<div class="section-title text-left">
+				<p class="subtitle">Galeria de Fotos</p>
+				<h4 class="title">Nuestros Trabajos</h4>
+			</div>
 
-				<div class="col-lg-6 mb-lg-30">
-					<div class="section-title mb-0 text-left">
-						<p class="subtitle">Equipo</p>
-						<h4 class="title">Nuestros agentes responderan a sus consultas</h4>
-					</div>
-					<p class="blockquote bg-transparent"> Obtenga la mejor solución para su hogar, su empresa o cualquier lugar interior o exterior </p>
-					<div class="basic-dot-slider light-dots">
-						<div class="slide-item">
-							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam sed minima, corporis temporibus autem nesciunt distinctio enim soluta illo, ea a labore modi optio. Magni et vel facere cupiditate quidem! Qui eligendi et sint id esse minima recusandae, ea alias adipisci temporibus, laudantium odio facere culpa consequatur voluptas earum.</p>
-						</div>
-						<div class="slide-item">
-							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam sed minima, corporis temporibus autem nesciunt distinctio enim soluta illo, ea a labore modi optio. Magni et vel facere cupiditate quidem! Qui eligendi et sint id esse minima recusandae, ea alias adipisci temporibus, laudantium odio facere culpa consequatur voluptas earum.</p>
-						</div>
-						<div class="slide-item">
-							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam sed minima, corporis temporibus autem nesciunt distinctio enim soluta illo, ea a labore modi optio. Magni et vel facere cupiditate quidem! Qui eligendi et sint id esse minima recusandae, ea alias adipisci temporibus, laudantium odio facere culpa consequatur voluptas earum.</p>
+			<div class="text-center filter-items left">
+				<h5 class="active portfolio-trigger" data-filter="*">Todos</h5>
+				<h5 class="portfolio-trigger" data-filter=".CCTV App">HD Recording</h5>
+				<h5 class="portfolio-trigger" data-filter=".Wide Angle Camera">Detection</h5>
+				<h5 class="portfolio-trigger" data-filter=".Backup ">Night Vision</h5>
+				<h5 class="portfolio-trigger" data-filter=".Outdoor Control">Wide Lens</h5>
+			</div>
+
+			<div class="portfolio-filter row">
+				<div class="col-lg-4 CCTV App">
+					<div class="sigma_portfolio-item style-2">
+						<img src="assets/img/projects/style-2/1.jpg" alt="portfolio">
+						<div class="sigma_portfolio-item-content">
+							<div class="sigma_portfolio-item-content-inner">
+								<h5> <a href="case-study.html"> Human Detection Alarm  </a> </h5>
+							</div>
+							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-lg-6">
-					<div class="mr-lg-30">
-						<div class="row">
-
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="sigma_team team-5">
-									<div class="sigma_team-thumb">
-										<img src="assets/img/team/1.jpg" alt="team">
-										<ul class="sigma_sm">
-											<li> <a href="#" class="trigger-team-socials"> <i class="fal fa-plus"></i> </a> </li>
-											<li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
-											<li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
-											<li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
-										</ul>
-									</div>
-									<div class="sigma_team-body">
-										<div class="sigma_team-info">
-											<p>Agente</p>
-											<h5>Kenne G. Patten</h5>
-										</div>
-									</div>
-								</div>
+				<div class="col-lg-4 Backup ">
+					<div class="sigma_portfolio-item style-2">
+						<img src="assets/img/projects/style-2/2.jpg" alt="portfolio">
+						<div class="sigma_portfolio-item-content">
+							<div class="sigma_portfolio-item-content-inner">
+								<h5> <a href="case-study.html"> Recording Backup  </a> </h5>
 							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="sigma_team team-5">
-									<div class="sigma_team-thumb">
-										<img src="assets/img/team/2.jpg" alt="team">
-										<ul class="sigma_sm">
-											<li> <a href="#" class="trigger-team-socials"> <i class="fal fa-plus"></i> </a> </li>
-											<li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
-											<li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
-											<li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
-										</ul>
-									</div>
-									<div class="sigma_team-body">
-										<div class="sigma_team-info">
-											<p>Agente</p>
-											<h5>Kenne G. Patten</h5>
-										</div>
-									</div>
-								</div>
-							</div>
-
+							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
-
+				<div class="col-lg-4 CCTV App Backup ">
+					<div class="sigma_portfolio-item style-2">
+						<img src="assets/img/projects/style-2/3.jpg" alt="portfolio">
+						<div class="sigma_portfolio-item-content">
+							<div class="sigma_portfolio-item-content-inner">
+								<h5> <a href="case-study.html"> Clear Night Vision  </a> </h5>
+							</div>
+							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 Outdoor Control CCTV App">
+					<div class="sigma_portfolio-item style-2">
+						<img src="assets/img/projects/style-2/4.jpg" alt="portfolio">
+						<div class="sigma_portfolio-item-content">
+							<div class="sigma_portfolio-item-content-inner">
+								<h5> <a href="case-study.html"> Wi-Fi Enabled  </a> </h5>
+							</div>
+							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 Wide Angle Camera">
+					<div class="sigma_portfolio-item style-2">
+						<img src="assets/img/projects/style-2/5.jpg" alt="portfolio">
+						<div class="sigma_portfolio-item-content">
+							<div class="sigma_portfolio-item-content-inner">
+								<h5> <a href="case-study.html"> Application Support  </a> </h5>
+							</div>
+							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 Wide Angle Camera">
+					<div class="sigma_portfolio-item style-2">
+						<img src="assets/img/projects/style-2/6.jpg" alt="portfolio">
+						<div class="sigma_portfolio-item-content">
+							<div class="sigma_portfolio-item-content-inner">
+								<h5> <a href="case-study.html"> Controlled Direction  </a> </h5>
+							</div>
+							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
-	</section>
-	<!-- Team End -->
+	</div>
+	<!-- Case Studies End -->
 
 	<!-- Case Studies Start -->
 	<!-- <div class="section section-padding">

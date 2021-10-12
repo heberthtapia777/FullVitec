@@ -20,19 +20,19 @@
 			$product		  	= $data->txtProduct;
 			$model	    		= $data->txtModel;
 			$summary        	= $data->txtSummary;
-			$details			= $data->txtDetails;			
+			$details			= $data->txtDetails;
 			$pricePlata   		= $data->txtPricePlata;
-			$priceOro         	= $data->txtPriceOro;			
+			$priceOro         	= $data->txtPriceOro;
 			$status           	= $data->txtEstado;
 
 			$data->txtFoto = '';
-			
+
 			if(empty($data->txtIdProduct)){
 				if($objProduct->Registrar($category,$brand,$unidad,$product,$model,$summary,$details,$pricePlata,$priceOro,$status)){
 
 					$lastId = $objProduct->LastId();
 					$txtFoto = $objProduct->LastPhoto($lastId);
-					
+
 					$data->txtFoto = $txtFoto;
 					$data->lastId = $lastId;
 					$data->nameCategory = $objProduct->NameCategory($category);
@@ -42,12 +42,12 @@
 				}else{
 					echo 0;
 				}
-			}else{				
+			}else{
 				$idProduct = $data->txtIdProduct;
-				if($objProduct->Modificar($idProduct,$category,$brand,$unidad,$product,$model,$summary,$details,$pricePlata,$priceOro,$status)){			
-					
+				if($objProduct->Modificar($idProduct,$category,$brand,$unidad,$product,$model,$summary,$details,$pricePlata,$priceOro,$status)){
+
 					$txtFoto = $objProduct->LastPhoto($idProduct);
-					
+
 					$data->txtFoto = $txtFoto;
 					$data->lastId = $idProduct;
 					$data->nameCategory = $objProduct->NameCategory($category);
@@ -58,7 +58,7 @@
 					echo 0;
 				}
 			}
-			
+
 			break;
 
 		case "delete":
@@ -88,7 +88,7 @@
 
 				if (empty($row[0])) {
 					$row[0] = 'sin_imagen.jpg';
-				}				
+				}
 
 				$img = '<a href="../../modulo/product/uploads/files/'.$row[0].'" data-lightbox="image-'.$reg["idProduct"].'" ><img src="../../modulo/product/uploads/files/thumbnail/'.$row[0].'"></a>';
 
@@ -118,7 +118,7 @@
 			echo json_encode($results);
 
 			break;
-		
+
 		case "listCategory":
 			require_once "../inc/category.php";
 
@@ -133,7 +133,7 @@
 			}
 
 			break;
-		
+
 		case "listBrand":
 			require_once "../inc/brand.php";
 
@@ -148,8 +148,8 @@
 			}
 
 			break;
-		
-		case "listUnidadMedida":			
+
+		case "listUnidadMedida":
 
 			require_once "../inc/unidadMedida.php";
 
@@ -168,12 +168,12 @@
 		case 'cargaDataEdit':
 
 			$id = $_POST["idProduct"];
-			
+
 			require_once "../inc/product.php";
 			$objUnidadMedida = new Product();
 
 			$query = $objProduct->cargaDataEdit($id);
-			$reg = $query->FetchRow();	
+			$reg = $query->FetchRow();
 
 			$data = new stdClass();
 
@@ -183,32 +183,32 @@
 			$data->cboMedida 	= $reg[3];
 			$data->txtProduct	= $reg[4];
 			$data->txtModel		= $reg[5];
-			$data->txtSummary	= $reg[6];			
+			$data->txtSummary	= $reg[6];
 			$data->txtDetails	= $reg[7];
 			$data->txtPricePlata= $reg[8];
 			$data->txtPriceOro	= $reg[9];
 			$data->txtEstado 	= $reg[10];
 			$data->txtFoto = '';
-			
+
 			echo json_encode($data);
-			
+
 			break;
-		
+
 		case 'cargaDetailSingle':
 
-			$id = $_POST["res"];			
+			$id = $_POST["res"];
 
 			$query = $objProduct->detailSingle($id);
-			$reg = $query->FetchRow();	
+			$reg = $query->FetchRow();
 
 			$data = new stdClass();
 
 			$data->idProduct 	= $id;
 			$data->cboCategory	= $reg[1];
 			$data->cboBrand		= $reg[2];
-			$data->txtName 		= $reg[3];			
+			$data->txtName 		= $reg[3];
 			$data->txtModel		= $reg[4];
-			$data->txtSummary	= $reg[5];			
+			$data->txtSummary	= $reg[5];
 			$data->txtDetails	= $reg[6];
 			$data->txtPricePlata= $reg[7];
 			$data->txtPriceOro	= $reg[8];
@@ -216,7 +216,7 @@
 			$data->dateMod		= $reg[10];
 			$data->txtStatus 	= $reg[11];
 
-			$queryPhoto = $objProduct->photoProduct($id);		
+			$queryPhoto = $objProduct->photoProduct($id);
 			$c = 0;
 			while ($row = $queryPhoto->FetchRow()) {
 				$data->txtPhoto[$c] = $row[0];
@@ -224,7 +224,7 @@
 			}
 
 			echo json_encode($data);
-			
+
 			break;
 
 	}
