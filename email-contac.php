@@ -37,9 +37,9 @@ try {
     //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
-    //Content    
+    //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->CharSet = 'UTF-8';    
+    $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'quoted-printable';
     $mail->Subject = 'Nueva Consulta';
     $mail->Body    = $body;

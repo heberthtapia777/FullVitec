@@ -153,7 +153,7 @@ function uploadFile(nameForm,id) {
 }
 
 $.validator.setDefaults( {
-    submitHandler: function () {
+    submitHandler: function (){
 
 		var dato = JSON.stringify( $('#frmEmpleado').serializeObject() );
 
