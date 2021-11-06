@@ -1430,7 +1430,7 @@ blockquote::before{
 .section {
     position: relative;
     padding: 110px 0;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 .section .container{
   position: relative;
@@ -8469,13 +8469,33 @@ td.remove {
 
 .sigma_service.primary-bg:hover,
 .sigma_service.primary-bg{
-  background-color: #0099ff;
+  /*background-color: #0099ff;*/
+  background-image:url(../../assets/img/service/13.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
   border: 0;
+  text-shadow: 3px 0px 4px #FFF;
 }
 .sigma_service.secondary-bg:hover,
 .sigma_service.secondary-bg{
-  background-color: #222;
+  background-image: url(../../assets/img/service/14.jpg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
   border: 0;
+  text-shadow: 3px 0px 4px #FFF;
+  background-size: cover;
+}
+.sigma_service.tercero-bg:hover,
+.sigma_service.tercero-bg{
+  background-image: url(../../assets/img/service/15.jpeg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  border: 0;
+  text-shadow: 3px 0px 4px #FFF;
+  background-size: cover;
 }
 
 .sigma_service.border.primary-bg .sigma_service-thumb::after,
@@ -8537,12 +8557,12 @@ td.remove {
   background-color: #0099ff;
   transform: translateY(-3px);
 }
-.sigma_service.style-1:hover .btn-link,
+/* .sigma_service.style-1:hover .btn-link,
 .sigma_service.style-1:hover i,
 .sigma_service.style-1:hover p,
 .sigma_service.style-1:hover h5{
   color: #fff;
-}
+} */
 
 /* Style 2 & 3 */
 .sigma_service.style-3,

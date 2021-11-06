@@ -235,7 +235,7 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-CCTV.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/5.jpg" alt="img">
 							<i class="flaticon-cctv"></i>
@@ -248,7 +248,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-ip.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/6.jpg" alt="img">
 							<i class="flaticon-security-camera"></i>
@@ -261,7 +261,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-alarma.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/7.jpg" alt="img">
 							<i class="flaticon-security"></i>
@@ -274,7 +274,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-alarma-incendio.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/8.jpg" alt="img">
 							<i class="flaticon-cctv-1"></i>
@@ -287,7 +287,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-control-acceso.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/9.jpg" alt="img">
 							<i class="flaticon-fingerprint"></i>
@@ -300,7 +300,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-video-portero.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/10.jpg" alt="img">
 							<i class="flaticon-cctv-1"></i>
@@ -313,7 +313,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-cerca-electrica.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/11.jpg" alt="img">
 							<i class="flaticon-security"></i>
@@ -326,7 +326,7 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.html" class="sigma_service style-2">
+					<a href="service-redes-datos.php" class="sigma_service style-2">
 						<div class="sigma_service-thumb">
 							<img src="assets/img/service/12.jpg" alt="img">
 							<i class="flaticon-technical-support"></i>

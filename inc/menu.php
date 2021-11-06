@@ -14,14 +14,14 @@
 	<a href="#">Servicios</a>
 	<ul class="sub-menu">
 		<li class="menu-item"> <a href="services.php">Servicios</a> </li>
-		<li class="menu-item"> <a href="service-details.php">Cámaras de Seguridad CCTV</a> </li>
-		<li class="menu-item"> <a href="#">Cámaras de Seguridad IP</a> </li>
-		<li class="menu-item"> <a href="#">Alarmas de Seguridad</a> </li>
-		<li class="menu-item"> <a href="#">Alarmas Contra Incendio</a> </li>
-		<li class="menu-item"> <a href="#">Control de Acceso y Asistencia</a> </li>
-		<li class="menu-item"> <a href="#">Vídeo Portero Digital</a> </li>
-		<li class="menu-item"> <a href="#">Cercas Electricas</a> </li>
-		<li class="menu-item"> <a href="#">Redes de Datos</a> </li>
+		<li class="menu-item"> <a href="service-CCTV.php">Cámaras de Seguridad CCTV</a> </li>
+		<li class="menu-item"> <a href="service-ip.php">Cámaras Digitales y Analogicas</a> </li>
+		<li class="menu-item"> <a href="service-alarma.php">Alarmas de Seguridad</a> </li>
+		<li class="menu-item"> <a href="service-alarma-incendio.php">Alarmas Contra Incendio</a> </li>
+		<li class="menu-item"> <a href="service-control-acceso.php">Control de Acceso y Asistencia</a> </li>
+		<li class="menu-item"> <a href="service-video-portero.php">Vídeo Portero Digital</a> </li>
+		<li class="menu-item"> <a href="service-cerca-electrica.php">Cercas Electricas</a> </li>
+		<li class="menu-item"> <a href="service-redes-datos.php">Redes de Datos</a> </li>
 	</ul>
 </li>
 <li class="menu-item menu-item-has-children">

@@ -3,7 +3,7 @@
 	require "conexion.php";
 	date_default_timezone_set("America/La_Paz" );
 
-	class Product{		
+	class Product{
 
 		public function Registrar($idCategory,$idBrand,$idUnidad,$product,$model,$summary,$details,$pricePlata,$priceOro,$status){
 			global $db;
@@ -16,7 +16,7 @@
 			$query = $db->Execute($sql);
 
 			$lastId = $db->insert_Id();
-			
+
 			/** ACTUALIZA FOTOS o IMAGENES */
 
 			$strQuery = "SELECT * FROM auximgproduct ";
@@ -27,13 +27,13 @@
 					$name = $row['name'];
 					$size = $row['size'];
 
-					$queryPhoto = "INSERT INTO photo ( idProduct, name, size ) "; 
+					$queryPhoto = "INSERT INTO photo ( idProduct, name, size ) ";
 					$queryPhoto.= "VALUES ( '".$lastId."', '".$name."', '".$size."' )";
 
 					$db->Execute($queryPhoto);
-					
+
 				}
-			}		
+			}
 
 			$sql = "TRUNCATE TABLE auximgproduct ";
 			$db->Execute($sql);
@@ -54,24 +54,24 @@
 
 			$query = $db->Execute($sql);
 
-			/** Actualiza la imagen o foto en la tabla */			
+			/** Actualiza la imagen o foto en la tabla */
 
 			$strQuery = "SELECT * FROM auximgproduct ";
-			$srtQ = $db->Execute($strQuery);			
+			$srtQ = $db->Execute($strQuery);
 
-			//$txtFoto = 'sin_imagen.jpg';	
-			
+			//$txtFoto = 'sin_imagen.jpg';
+
 			if ($srtQ){
 				while($row = $srtQ->FetchRow()){
 					$name = $row['name'];
 					$size = $row['size'];
 
-					$queryPhoto = "INSERT INTO photo ( idProduct, name, size ) "; 
+					$queryPhoto = "INSERT INTO photo ( idProduct, name, size ) ";
 					$queryPhoto.= "VALUES ( '".$idProduct."', '".$name."', '".$size."' )";
 
-					$db->Execute($queryPhoto);					
+					$db->Execute($queryPhoto);
 				}
-			}					
+			}
 
 			$sql = "TRUNCATE TABLE auximgproduct ";
 			$db->Execute($sql);
@@ -88,7 +88,7 @@
 			if ($query) {
 				$sql = "DELETE FROM product WHERE idProduct = $idProduct";
 				$query = $db->Execute($sql);
-				return $query;				
+				return $query;
 			}
 		}
 

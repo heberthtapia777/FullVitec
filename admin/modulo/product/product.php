@@ -181,7 +181,7 @@
 									<div class="row">
 										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 left">
 											<div class="form-group has-primary m-b-40">
-												<textarea id="txtSummary" class="form-control" name="txtSummary" placeholder=""></textarea>
+												<textarea id="txtSummary" class="form-control" name="txtSummary" autocomplete="off" ></textarea>
 												<span class="bar"></span>
 												<label>Resumen:</label>
 											</div>
@@ -191,7 +191,7 @@
 									<div class="row">
 										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 left">
 											<div class="form-group has-primary m-b-40">
-												<textarea id="txtDetails" class="form-control" name="txtDetails" placeholder=""></textarea>
+												<textarea id="txtDetails" class="form-control" name="txtDetails" autocomplete="off" ></textarea>
 												<span class="bar"></span>
 												<label>Descripción:</label>
 											</div>
@@ -286,7 +286,7 @@
 									<div class="row justify-content-between align-items-center">
 										<div class="col-auto">
 											<button type="submit" class="btn btn-outline-success btn-sm mr-2"><i class="fas fa-save"></i> Guardar</button>
-											<button class="btn btn-outline-danger btn-sm" id="btnCancel" onclick="cancelar()"><i class="fas fa-window-close"></i> Cancelar</button>
+											<button type="button" class="btn btn-outline-danger btn-sm" id="btnCancel" onclick="cancelar()"><i class="fas fa-window-close"></i> Cancelar</button>
 										</div>
 									</div>
 								</div>

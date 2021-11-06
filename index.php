@@ -406,7 +406,7 @@
 				<div class="col-lg-6">
 					<div class="mr-lg-30">
 						<div class="section-title mb-0 text-left">
-							<p class="subtitle">Tenemos mas de 5 años de experiencia</p>
+							<p class="subtitle">Tenemos mucha de experiencia</p>
 							<h4 class="title">Brindamos soluciones excepcionales para los clientes</h4>
 						</div>
 						<ul class="sigma_list list-2 mb-0">
@@ -437,39 +437,33 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-6">
-					<a href="service-details.php" class="sigma_service style-1 primary-bg">
+					<a href="service-control-acceso.php" class="sigma_service style-1 primary-bg">
 						<div class="sigma_service-thumb">
-							<i class="text-white flaticon-fingerprint"></i>
 						</div>
 						<div class="sigma_service-body">
-							<h5 class="text-white">Acceso con huellas dactilares</h5>
-							<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod </p>
+							<h5>Acceso con huellas dactilares</h5>
 						</div>
-						<span class="btn-link text-white">Aprende Más <i class="text-white far fa-arrow-right"></i> </span>
+						<span class="btn-link">Aprende Más <i class="far fa-arrow-right"></i> </span>
 					</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 mt-negative-sm">
-					<a href="service-details.php" class="sigma_service style-1 secondary-bg">
+					<a href="service-CCTV.php" class="sigma_service style-1 secondary-bg">
 						<div class="sigma_service-thumb">
-							<i class="custom-primary flaticon-security-camera-2"></i>
 						</div>
 						<div class="sigma_service-body">
-							<h5 class="text-white">Cámara al aire libre</h5>
-							<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod </p>
+							<h5>Cámaras de Seguridad CCTV</h5>
 						</div>
-						<span class="text-white btn-link">Aprende Más <i class="text-white far fa-arrow-right"></i> </span>
+						<span class="btn-link">Aprende Más <i class="far fa-arrow-right"></i> </span>
 					</a>
 				</div>
 
 				<div class="col-lg-4 col-md-6 mt-negative-sm">
-					<a href="service-details.php" class="sigma_service style-1 bg-white">
+					<a href="service-alarma.php" class="sigma_service style-1 tercero-bg">
 						<div class="sigma_service-thumb">
-							<i class="flaticon-security-camera-1"></i>
 						</div>
 						<div class="sigma_service-body">
-							<h5>Cámara al interior</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod </p>
+							<h5>Alarmas de Seguridad</h5>
 						</div>
 						<span class="btn-link">Aprende Más <i class="far fa-arrow-right"></i> </span>
 					</a>
@@ -478,7 +472,7 @@
 			</div>
 
 			<div class="text-right">
-				<a href="services.html" class="btn-link text-white"> Empieza Ahora <i class="custom-primary far fa-arrow-right"></i> </a>
+				<a href="services.php" class="btn-link text-white"> Empieza Ahora <i class="custom-primary far fa-arrow-right"></i> </a>
 			</div>
 
 		</div>
@@ -557,7 +551,7 @@
 	<!-- Progress bar End -->
 
 	<!-- Case Studies Start -->
-	<div class="section section-padding">
+	<div class="section pt-0">
 		<div class="container">
 
 			<div class="section-title text-left">
@@ -565,176 +559,16 @@
 				<h4 class="title">Nuestros Trabajos</h4>
 			</div>
 
-			<div class="text-center filter-items left">
-				<h5 class="active portfolio-trigger" data-filter="*">Todos</h5>
-				<h5 class="portfolio-trigger" data-filter=".CCTV App">HD Recording</h5>
-				<h5 class="portfolio-trigger" data-filter=".Wide Angle Camera">Detection</h5>
-				<h5 class="portfolio-trigger" data-filter=".Backup ">Night Vision</h5>
-				<h5 class="portfolio-trigger" data-filter=".Outdoor Control">Wide Lens</h5>
+			<div class="text-center filter-items left" id="galery">
+				
 			</div>
 
-			<div class="portfolio-filter row">
-				<div class="col-lg-4 CCTV App">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/1.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Human Detection Alarm  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Backup ">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/2.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Recording Backup  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 CCTV App Backup ">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/3.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Clear Night Vision  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Outdoor Control CCTV App">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/4.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Wi-Fi Enabled  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Wide Angle Camera">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/5.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Application Support  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Wide Angle Camera">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/6.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Controlled Direction  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
+			<div class="portfolio-filter row" id="galeryImages">
+				
 			</div>
 
 		</div>
 	</div>
-	<!-- Case Studies End -->
-
-	<!-- Case Studies Start -->
-	<!-- <div class="section section-padding">
-		<div class="container">
-
-			<div class="section-title text-left">
-				<p class="subtitle">Portafolio</p>
-				<h4 class="title">Casos de Estudio</h4>
-			</div>
-
-			<div class="text-center filter-items left">
-				<h5 class="active portfolio-trigger" data-filter="*">Todos</h5>
-				<h5 class="portfolio-trigger" data-filter=".CCTV App">Grabación HD</h5>
-				<h5 class="portfolio-trigger" data-filter=".Wide Angle Camera">Detección</h5>
-				<h5 class="portfolio-trigger" data-filter=".Backup ">Vision Nocturna</h5>
-				<h5 class="portfolio-trigger" data-filter=".Outdoor Control">Lente Ancha</h5>
-			</div>
-
-			<div class="portfolio-filter row">
-				<div class="col-lg-4 CCTV App">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/1.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Alarma de Detección Humana  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Backup ">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/2.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Copia de Seguridad de Grabación  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 CCTV App Backup ">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/3.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Visión Nocturna Clara  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Outdoor Control CCTV App">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/4.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Wi-Fi Habilitado  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Wide Angle Camera">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/5.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Soporte de aplicaciones  </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 Wide Angle Camera">
-					<div class="sigma_portfolio-item style-2">
-						<img src="assets/img/projects/style-2/6.jpg" alt="portfolio">
-						<div class="sigma_portfolio-item-content">
-							<div class="sigma_portfolio-item-content-inner">
-								<h5> <a href="case-study.html"> Dirección controlada </a> </h5>
-							</div>
-							<a href="case-study.html"><i class="far fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div> -->
-	<!-- Case Studies End -->
 
 	<!-- Form Start -->
 	<div class="section dark-overlay dark-overlay-3 bg-cover bg-center bg-norepeat" style="background-image: url(assets/img/bg1.jpg)">
@@ -949,7 +783,47 @@
 		$(document).ready(function () {
 			$("#formQuote").validate();
 			$("#formBoletin").validate();
+			listCategoryGalery();
+			listImagesGalery();
 		});
+
+		function listCategoryGalery(){
+			$.post("admin/ajax/galeryAjax.php?op=listCategoryGalery", function(r){
+				$("#galery").html(r);
+			});
+		}
+
+		function listImagesGalery(){
+			$.post("admin/ajax/galeryAjax.php?op=listImagesGalery", function(r){
+				$("#galeryImages").html(r);
+				doIsotope();
+			});
+		}
+
+		function doIsotope() {
+			var $portfolioGrid = '';
+
+			$('.masonry').imagesLoaded(function() {
+				$portfolioGrid = $('.portfolio-filter').isotope({
+					itemSelector: '.col-lg-4',
+					percentPosition: true,
+					masonry: {
+						columnWidth: '.col-lg-4'
+					}
+				});
+			});
+
+			$('.filter-items').on('click', '.portfolio-trigger', function() {
+				var filterValue = $(this).attr('data-filter');
+				$portfolioGrid.isotope({filter: filterValue});
+			});
+
+			$('.portfolio-trigger').on('click', function(e) {
+				$(this).closest('.filter-items').find('.active').removeClass('active');
+				$(this).addClass('active');
+				e.preventDefault();
+			});
+		}
 
 		function sendQuote(idForm, p) {
 			var dato = JSON.stringify($('#' + idForm).serializeObject());
@@ -970,7 +844,6 @@
 						});
 						$("#"+idForm)[0].reset();
 					}
-
 				}
 			})
 		}
